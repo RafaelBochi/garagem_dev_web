@@ -3,21 +3,21 @@
 import contextlib
 import os
 
-import netifaces as ni
+# import netifaces as ni
 
 
-# Função para obter o IP do computador
-def get_current_ip():
-    interfaces = ni.interfaces()
+# # Função para obter o IP do computador
+# def get_current_ip():
+#     interfaces = ni.interfaces()
 
-    for interface in interfaces:
-        with contextlib.suppress(ValueError, KeyError):
-            addresses = ni.ifaddresses(interface)
-            ipv4_address = addresses[ni.AF_INET][0]["addr"]
-            if ipv4_address != "127.0.0.1":
-                return ipv4_address
+#     for interface in interfaces:
+#         with contextlib.suppress(ValueError, KeyError):
+#             addresses = ni.ifaddresses(interface)
+#             ipv4_address = addresses[ni.AF_INET][0]["addr"]
+#             if ipv4_address != "127.0.0.1":
+#                 return ipv4_address
 
-    return None
+#     return None
 
 
 # Função para atualizar o arquivo .env com o novo IP
@@ -46,11 +46,11 @@ def update_env_file(ip):
 
 
 # Função principal
-def main():
-    ip = get_current_ip()
-    if ip:
-        update_env_file(ip)
+# def main():
+#     # ip = get_current_ip()
+#     if ip:
+#         update_env_file(ip)
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
