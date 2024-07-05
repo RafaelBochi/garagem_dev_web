@@ -5,4 +5,4 @@ class Marca(models.Model):
     nacionalidade = models.CharField(max_length=50)
 
     def __str__(self):
-        return f"{self.descricao.title()} - {self.id}"
+        return f"{self.nome.upper()} - {self.id}"
