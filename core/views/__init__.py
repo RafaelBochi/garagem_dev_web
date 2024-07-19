@@ -5,3 +5,4 @@ from .cor import CorViewSet
 from .marca import MarcaViewSet
 from .modelo import ModeloViewSet
 from .veiculo import VeiculoViewSet
+from .imagem import ImagemVeiculoViewSet

@@ -39,7 +39,7 @@ netifaces==0.11.0
 nodeenv==1.9.1
 packaging==24.1
 passage-identity==2.1.4
-pillow==10.3.0
+pillow==10.4.0
 platformdirs==4.2.2
 pre-commit==3.7.1
 psycopg2-binary==2.9.9

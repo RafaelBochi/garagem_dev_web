@@ -119,7 +119,7 @@ FILE_UPLOAD_PERMISSIONS = 0o640
 
 if MODE == "DEVELOPMENT":
     MY_IP = os.getenv("MY_IP", "127.0.0.1")
-    MEDIA_URL = f"http://{MY_IP}:19003/media/"
+    MEDIA_URL = "/media/"
 else:
     CLOUDINARY_URL = os.getenv("CLOUDINARY_URL")
     DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
@@ -157,5 +157,3 @@ SPECTACULAR_SETTINGS = {
 PASSAGE_APP_ID = os.getenv("PASSAGE_APP_ID", "app_id")
 PASSAGE_API_KEY = os.getenv("PASSAGE_API_KEY", "api_key")
 PASSAGE_AUTH_STRATEGY = 2
-
-print(f"{MODE = } \n{MEDIA_URL = } \n{DATABASES = }")

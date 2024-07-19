@@ -5,4 +5,4 @@ class ModeloSerializer(ModelSerializer):
     class Meta:
         model = Modelo
         fields = "__all__"
-        depth = 1
+        depth = 2

@@ -5,3 +5,4 @@ from .cor import CorSerializer
 from .marca import MarcaSerializer
 from .modelo import ModeloSerializer
 from .veiculo import VeiculoSerializer
+from .imagem import ImagemVeiculoSerializer
