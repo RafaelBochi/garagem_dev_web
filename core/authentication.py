@@ -45,6 +45,7 @@ class TokenAuthentication(authentication.BaseAuthentication):
             user: User = User.objects.get(passage_id=psg_user_id)
         except ObjectDoesNotExist:
             psg_user = psg.getUser(psg_user_id)
+            print("create user")
             user: User = User.objects.create_user(
                 passage_id=psg_user.id,
                 email=psg_user.email,
