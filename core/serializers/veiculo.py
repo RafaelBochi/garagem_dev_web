@@ -5,4 +5,9 @@ class VeiculoSerializer(ModelSerializer):
     class Meta:
         model = Veiculo
         fields = "__all__"
-        depth = 1
+        depth = 2
+
+class VeiculoWriteSerializer(ModelSerializer):
+    class Meta:
+        model = Veiculo
+        fields = "__all__"

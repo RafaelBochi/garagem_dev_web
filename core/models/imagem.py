@@ -7,6 +7,3 @@ def upload_image_fomater(instance, filename):
 class ImagemVeiculo(models.Model):
     image = models.ImageField(upload_to=upload_image_fomater, null=True, blank=True)
     name = models.CharField(max_length=100, null=True, blank=True)
-
-    def __str__(self):
-        return self.name
